@@ -1,0 +1,36 @@
+.h--blog {
+  padding: 2rem;
+  .blog--container {
+    background: url(/assets/img/blog.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 60rem;
+    width: 100%;
+    max-width: 120rem;
+    margin: 12rem auto 8rem;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 4rem;
+    .blog--motif {
+      position: absolute;
+      top: 3rem;
+      right: 5rem;
+    }
+    .blog--inner {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      max-width: 100rem;
+      width: 100%;
+      margin: 0 auto 4rem;
+      h2 {
+        color: white;
+        font-size: 6rem;
+        line-height: 1.0125em;
+        max-width: 47rem;
+      }
+    }
+  }
+}
