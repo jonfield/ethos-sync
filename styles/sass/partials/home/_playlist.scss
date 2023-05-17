@@ -1,0 +1,14 @@
+.h--playlist {
+  background: $color-bg--grey;
+  position: relative;
+  padding: 2rem;
+  .playlist--wrap {
+    margin: 5rem 0;
+    h2 {
+      text-align: center;
+      @include responsive-min(screen-desktop) {
+        font-size: 5rem;
+      }
+    }
+  }
+}
