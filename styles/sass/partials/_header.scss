@@ -1,0 +1,52 @@
+.home {
+  header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+}
+.header--inner {
+  max-width: 130rem;
+  margin: auto;
+  padding: 3rem;
+  .nav--wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .nav--left {
+      display: flex;
+      align-items: center;
+    }
+  }
+  // logo
+  .logo {
+    margin: 0 2rem;
+    a {
+      display: block;
+    }
+    svg {
+      width: 100%;
+    }
+  }
+  //strip default ul styling in nav
+  ul {
+    list-style-type: none;
+    display: flex;
+    li {
+      color: white;
+      padding-right: 3.5rem;
+      a {
+        color: white;
+        letter-spacing: 0.15rem;
+      }
+    }
+  }
+  .nav--search {
+    svg {
+      margin-right: 1rem;
+      margin-bottom: -2px;
+    }
+  }
+  
+}

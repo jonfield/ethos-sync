@@ -1,0 +1,37 @@
+h2 {
+  font-family: $font;
+  font-weight: bold;
+  font-size: 3.5rem;
+  
+}
+
+p {
+  font-family: $font;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+a {
+  font-family: $font;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+
+
+
+//buttons
+.btn--outline {
+  border: 1px solid $color-grn;
+  padding: 1rem 1.25rem;
+  color: white;
+}
+.btn--blk {
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  border: 1px solid $color-grn;
+  padding: 1.125rem 2rem;
+
+}
