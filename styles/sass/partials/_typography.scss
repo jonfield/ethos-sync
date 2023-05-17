@@ -1,17 +1,21 @@
-h2 {
+h1, h2, h3, h4, a, p, ul, li, input {
   font-family: $font;
+}
+
+h2 {
   font-weight: bold;
   font-size: 3.5rem;
   
 }
+h3 {
+  font-size: 1.8rem;
+}
 
 p {
-  font-family: $font;
   font-weight: 400;
   font-size: 1.5rem;
 }
 a {
-  font-family: $font;
   font-weight: bold;
   font-size: 1.5rem;
   text-decoration: none;
@@ -25,6 +29,12 @@ a {
   border: 1px solid $color-grn;
   padding: 1rem 1.25rem;
   color: white;
+  transition: 400ms ease-in;
+
+  &:hover {
+    background: $color-grn;
+    color: #000;
+  }
 }
 .btn--blk {
   text-align: center;
@@ -33,5 +43,10 @@ a {
   font-size: 1.4rem;
   border: 1px solid $color-grn;
   padding: 1.125rem 2rem;
+  transition: 400ms ease-in;
+
+  &:hover {
+    background: $color-grn;
+  }
 
 }

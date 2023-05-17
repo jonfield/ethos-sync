@@ -1,14 +1,90 @@
 .h--playlist {
   background: $color-bg--grey;
   position: relative;
-  padding: 2rem;
+  padding: 2rem 2rem 8rem;
   .playlist--wrap {
     margin: 5rem 0;
     h2 {
       text-align: center;
       @include responsive-min(screen-desktop) {
         font-size: 5rem;
+        margin-bottom: 5rem;
       }
     }
+    .picker--inner {
+      display: grid;
+      max-width: 125rem;
+      margin: 4rem auto;
+      column-gap: 3rem;
+      row-gap: 4.5rem;
+      grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
+      align-items: center;
+      justify-content: center;
+    }
+    .pl--card {
+      position: relative;
+      max-width: 22.5rem;
+      .pl--clip {
+        width: 22.5rem;
+        height: 22.5rem;
+        background-repeat: no-repeat;
+        display: block;
+        position: relative;
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        background-position: center;
+        background-size: contain;
+
+      }
+
+      .overlay--link {
+        background-color: rgba(0,0,0,.4);
+        width: 22.5rem;
+        height: 22.5rem;
+        display: block;
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        position: absolute;
+        bottom: 0;
+        // transition to visible on hover
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.4s linear;
+        h3 {
+         color: white;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         &::after {
+          position: absolute;
+          content: '';
+          height: 0.1rem;
+          bottom: -0.4rem;
+          margin: 0 auto;
+          left: 0;
+          right: 0;
+          width: 100%;
+          background: $color-grn    
+
+         } 
+        }
+      }
+      &:hover {
+        .overlay--link {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+    .pl--browse {
+      text-align: center;
+      margin: 8rem auto 0;
+    }
   }
+  .arrow--down {
+    position: absolute;
+    bottom: -7rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
 }
