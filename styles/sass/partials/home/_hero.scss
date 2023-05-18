@@ -17,6 +17,9 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
+      .hc--center {
+        padding: 0 2rem;
+      }
       svg {
         width: 100%;
       }
