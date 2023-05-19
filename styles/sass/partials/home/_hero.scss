@@ -63,6 +63,9 @@
   position: absolute;
   z-index: 100;
   opacity: 1;
+  &.entered {
+    z-index: -10;
+  }
   video {
     object-fit: cover;
     width: 100%;

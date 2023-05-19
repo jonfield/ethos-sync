@@ -29,5 +29,8 @@ enterBtn.addEventListener('click', () => {
         ease: "power1.out"  // easing function for the animation
     });
     heroBG.play();
+    setTimeout(() => {
+      introOverlay.classList.add('entered');
+    }, 2000);
 });
 
