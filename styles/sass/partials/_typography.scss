@@ -50,3 +50,24 @@ a {
   }
 
 }
+button {
+  font-family: $font;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  background: none;
+  color: white;
+  border: 1px solid $color-grn;
+  width: 15rem;
+  padding: 1rem;
+  text-align: center;
+  margin: 4rem 0 2rem;
+  transition: 400ms ease-in;
+  cursor: pointer;
+
+  &:hover {
+    background: $color-grn;
+    color: #000;
+  }
+}
