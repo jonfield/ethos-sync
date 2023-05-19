@@ -1,5 +1,11 @@
 let enterBtn = document.getElementById('enter');
 let introOverlay = document.getElementById('introOverlay');
+let heroBG = document.getElementById('heroBg');
+
+heroBG.pause();
+
+
+
 
 
 enterBtn.addEventListener('click', () => {
@@ -22,4 +28,6 @@ enterBtn.addEventListener('click', () => {
         opacity: 0,    // animate to zero opacity (completely transparent)
         ease: "power1.out"  // easing function for the animation
     });
+    heroBG.play();
 });
+
