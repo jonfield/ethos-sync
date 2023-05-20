@@ -1,0 +1,99 @@
+.about {
+  .hero--container {
+    .hero--inner {
+      height: 80vh;
+      #heroBg {
+        height: 80vh;
+      }
+      .hero--content {
+        h1 {
+          color: white;
+          text-align: center;
+          position: absolute;
+          bottom: -1%;
+          font-size: 10vw;
+          line-height: 0.85em;
+          @include responsive-min(screen-desktop) {
+            bottom: -2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.a--why {
+  background: $color-bg--grey;
+  padding: 2rem;
+  position: relative;
+  .why--container {
+    margin: 5rem 0;
+    h2 {
+      text-align: center;
+    }
+    .why--inner {
+      display: flex;
+      flex-direction: column-reverse;
+      max-width: 60rem;
+      margin: 3rem auto;
+      column-gap: 3rem;
+      @include responsive-min(screen-tablet) {
+        flex-direction: row;
+        max-width: 90rem;
+        align-items: center;
+      }
+      @include responsive-min(screen-desktop) {
+        max-width: 112rem;
+        margin: 5rem auto 7rem;
+      }
+    }
+  }
+  .w--copy {
+    @include responsive-min(screen-desktop) {
+      max-width: 65rem;
+    }
+    .w--list {
+      list-style-image: url(/assets/icons/diamond.svg);
+      padding-inline-start: 2rem;
+      font-family: $font;
+      h3 {
+        font-family: $font;
+        text-transform: uppercase;
+      }
+      p {
+        line-height: 1.75em;
+      }
+      li {
+        padding: 0 1rem 2rem;
+      }
+    }
+  }
+  .w--img {
+    max-width: 25rem;
+    margin: 0 auto 3rem;
+    img {
+      width: 100%;
+
+    }
+    @include responsive-min(screen-desktop) {
+      max-width: 40rem;
+    }
+  }
+  .arrow--down {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -7rem;
+
+  }
+}
+.a--box {
+  .blog--container {
+    .btn--blk {
+      color: #fff;
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+}

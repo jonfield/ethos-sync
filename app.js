@@ -31,6 +31,6 @@ enterBtn.addEventListener('click', () => {
     heroBG.play();
     setTimeout(() => {
       introOverlay.classList.add('entered');
-    }, 2000);
+    }, 7000);
 });
 
