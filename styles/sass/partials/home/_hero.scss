@@ -80,5 +80,28 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    button {
+      color: $color-grn;
+      border: none;
+      font-size: 5.5rem;
+      text-transform: none;
+      width: auto;
+      margin: 0;
+      position: absolute;
+      top: 54%;
+      transform: translateY(-50%);
+      &:hover {
+        background: none;
+        color: $color-grn;
+      }
+    }
+  }
+  .overlay--logo {
+    position: absolute;
+    bottom: 5rem;
+    right: 5rem;
+    max-width: 17rem;
+    height: auto;
   }
 }

@@ -40,6 +40,10 @@ enterBtn.addEventListener('click', () => {
         opacity: 0,
         delay: 0.8,
       })
+      .to('#introOverlay .overlay--logo', {
+        duration: 0.5,
+        opacity: 0,
+      })
       .to(introOverlay, {
         duration: 5,   // animation duration in seconds
         opacity: 0,    // animate to zero opacity (completely transparent)
