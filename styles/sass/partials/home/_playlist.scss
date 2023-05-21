@@ -54,18 +54,21 @@
          top: 50%;
          left: 50%;
          transform: translate(-50%, -50%);
-         &::after {
-          position: absolute;
-          content: '';
-          height: 0.1rem;
-          bottom: -0.4rem;
-          margin: 0 auto;
-          left: 0;
-          right: 0;
-          width: 100%;
-          background: $color-grn    
+         font-size: 2rem;
+         line-height: 1.25em;
+         text-align: center;
+        //  &::after {
+        //   position: absolute;
+        //   content: '';
+        //   height: 0.1rem;
+        //   bottom: -0.4rem;
+        //   margin: 0 auto;
+        //   left: 0;
+        //   right: 0;
+        //   width: 100%;
+        //   background: $color-grn    
 
-         } 
+        //  } 
         }
       }
       &:hover {

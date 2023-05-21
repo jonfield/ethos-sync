@@ -5,7 +5,24 @@ let heroBG = document.getElementById('heroBg');
 heroBG.pause();
 
 
+// Function to get a cookie
+const getCookie = (name) => {
+  let nameEQ = name + "=";
+  let ca = document.cookie.split(';');
+  for(let i=0;i < ca.length;i++) {
+      let c = ca[i];
+      while (c.charAt(0)==' ') c = c.substring(1,c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+  }
+  return null;
+}
+let cookieName = "entered";
+// if cookie; dont show overlay and play home hero bg video
+if(getCookie(cookieName) !== null) {
+  introOverlay.style.display = 'none';
+  heroBG.play();
 
+} 
 
 
 enterBtn.addEventListener('click', () => {
@@ -32,5 +49,10 @@ enterBtn.addEventListener('click', () => {
     setTimeout(() => {
       introOverlay.classList.add('entered');
     }, 7000);
+    //set cookie
+    let date = new Date();
+    date.setTime(date.getTime() + (60*60*1000)); // Set the expiration to 1 hour from now
+    let expires = `; expires=${date.toGMTString()}`;
+    document.cookie = `entered=1${expires}; path=/`;
 });
 
