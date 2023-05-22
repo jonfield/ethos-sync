@@ -142,3 +142,18 @@
     display: none;
   }
 }
+
+//discover page change hamburger color
+.discover {
+  .hamburger {
+    div {
+      background: #000;
+    }
+    &.close {
+      div {
+
+        background: $color-grn;
+      }
+    }
+  }
+}
