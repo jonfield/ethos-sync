@@ -60,3 +60,12 @@ let heroBG = document.getElementById('heroBg');
 //     document.cookie = `entered=1${expires}; path=/`;
 // });
 
+document.addEventListener("DOMContentLoaded", function() {
+    let menuBtn = document.querySelector(".hamburger");
+    let nav = document.querySelector(".menu--mobile");
+
+    menuBtn.addEventListener("click", function() {
+        nav.classList.toggle("opened");
+        menuBtn.classList.toggle("close");
+    });
+});

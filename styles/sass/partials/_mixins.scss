@@ -32,4 +32,7 @@
   @else if $screen == screen-minSmall {
       @media only screen and (min-width: $screen-minSmall) { @content; }
   }
+  @else if $screen == screen-nav {
+      @media only screen and (min-width: $screen-nav) { @content; }
+  }
 }
