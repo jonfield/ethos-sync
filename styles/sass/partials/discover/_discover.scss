@@ -14,7 +14,7 @@
 }
 
 .embed {
-  background: $color-bg--grey;
+  // background: $color-bg--grey;
   padding: 2rem;
   .em--inner {
     position: relative;
@@ -52,7 +52,7 @@
 
 .h--playlist {
   &.d--playlist {
-    background-color: #fff;
+    background-color: $color-bg--grey;
     padding-bottom: 3rem;
     .playlist--wrap {
       margin: 14rem auto 5rem;
