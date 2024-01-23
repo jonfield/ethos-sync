@@ -44,10 +44,10 @@
         clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
         position: absolute;
         bottom: 0;
-        // transition to visible on hover
-        visibility: hidden;
-        opacity: 0;
-        transition: visibility 0s, opacity 0.4s linear;
+        // visibility: hidden;
+        // opacity: 0;
+        // transition: visibility 0s, opacity 0.4s linear;
+        transition: background-color 0.4s linear;
         h3 {
          color: white;
          position: absolute;
@@ -57,24 +57,15 @@
          font-size: 2rem;
          line-height: 1.25em;
          text-align: center;
-        //  &::after {
-        //   position: absolute;
-        //   content: '';
-        //   height: 0.1rem;
-        //   bottom: -0.4rem;
-        //   margin: 0 auto;
-        //   left: 0;
-        //   right: 0;
-        //   width: 100%;
-        //   background: $color-grn    
+         padding-bottom: 10px;
+         border-bottom: 1px solid #00FFD1;
 
-        //  } 
         }
       }
       &:hover {
         .overlay--link {
-          visibility: visible;
-          opacity: 1;
+        background-color: rgba(0,0,0,.6);
+
         }
       }
     }

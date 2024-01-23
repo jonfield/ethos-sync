@@ -21,6 +21,22 @@
     }
   }
 }
+.about {
+  .h--intro {
+    .intro--wrap {
+      @include responsive-min(screen-desktop) {
+        max-width: 112rem;
+      }
+      p {
+        @include responsive-min(screen-desktop) {
+          font-size: 1.8rem;
+          margin-bottom: 2rem;
+        }
+        
+      }
+    }
+  }
+}
 
 .a--why {
   background: $color-bg--grey;
@@ -50,7 +66,7 @@
   }
   .w--copy {
     @include responsive-min(screen-desktop) {
-      max-width: 65rem;
+      max-width: 63rem;
     }
     .w--list {
       list-style-image: url(/assets/icons/diamond.svg);
@@ -65,6 +81,16 @@
       }
       li {
         padding: 0 1rem 2rem;
+      }
+      a {
+        &.link {
+          color: #000;
+          text-decoration: underline;
+          transition: color 0.4s linear;
+          &:hover {
+            color: $color-blue;
+          }
+        }
       }
     }
   }
